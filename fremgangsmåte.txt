@@ -1,0 +1,67 @@
+Hva vil de ha?
+- Hvilke skip skal de bruke på ferden?
+- Sitte igjen med en liste over hvilke skip man bør bruke, og data fra disse
+- Hvordan skal ideen selges/presenteres til kunden?
+- Videreutvikle- og finne nytt bruksområde for den allerede etablerte EMC 
+
+
+Mulig løsning:
+- Skrive inn data for ferden
+- Huke av hvilke av faktorene som er viktigst
+- "Med den og den ferden som tar minst tid kan man spare x utslipp!!"
+- Vise at løsningen både er lønnsom og bærekraftig 
+    Parameter 1: 84$/tonn CO2 Parameter 2: Tap av penger pga redusert hastighet
+
+
+
+Antakelser:
+Minimum speed: 6 Knot (kts)
+Maximum speed: 15,5 kts.
+Time in load and discharge ports is five days each (10 days in total)
+The sea travel distance between New Orleans and Hamburg is 5,116 nautical miles (nm)
+
+Varierende parametre:
+    Fueltype: HFO (MGO, LNV og Ba)
+    Hastighet 6-15.5 kts
+    Type skip: (Kamsarmax, ultramax, supramax)
+    
+Resultat: 
+Emitted CO2 (utslipp)
+Estimated Time of Arrival
+
+
+--------
+Input:
+Nautiske mil x
+Liste med mulige skip x
+
+Variabler
+Hastighet - Mindre utslipp saktere, men høyere utslipp raskere
+
+
+
+Output:
+En vektet liste med hvilket skip man bør velge. Hva tjener man på å kjøre saktere? At what cost?
+
+Salspitch - Hvorfor blir EEC mer relevant i fremtiden?
+    - Økende $/tonn CO2 i fremtiden
+    - Ønske om mer effektiv transport
+    - Strengere lovverk mot klassifisering av skip
+    - 80-90% av varer i det globale handelsnettverket transportert via havet. 
+
+Nettside?:
+    Presentere bruk av kalkulatoren
+    Vise hvordan parametre kan endres
+    Jævlig fet logo og teamnavn - Finito
+
+
+
+Data
+2.500.000t med korn
+Så må vi sjekke for hvert skip hvor mange turer hver må ta for å dekke behovet
+
+9 skip, for hvert av de må du sjekke hvor mange av de trengs, og gange alle tallene med dette
+For hvert av de må vi ta ceil(2500000/permissible intake) og telle hvor mange skip som trengs
+
+
+

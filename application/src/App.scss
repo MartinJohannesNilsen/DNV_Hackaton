@@ -1,0 +1,119 @@
+$backgroundColor: rgb(241, 241, 241);
+$h1Color: black;
+$textColor: black;
+$font: "Open Sans", sans-serif, "";
+$buttonColor: rgb(2, 42, 101);
+
+body{
+	// background-color: $backgroundColor;
+	background-image: url("./data/img/blurred_background.png");
+	// background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.App {
+	padding: 10% 20%;
+	display: grid;
+	gap: 30px;
+
+	h1 {
+		font-family: $font;
+	}
+	h2 {
+		font-family: $font;
+	}
+	h3 {
+		font-family: $font;
+	}
+	p {
+		font-family: $font;
+	}
+
+	.Container {
+		background-color: rgba($color: #fff, $alpha: .95);
+		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+			0 10px 10px -5px rgba(0, 0, 0, 0.04);
+		padding: 50px;
+		//Css-grid layput
+		display: grid;
+		gap: 20px;
+		grid-template-columns: 1fr;
+
+		.IntroContainer {
+			text-align: center;
+		}
+
+		.InputContainer {
+			margin: 25px 0 0 0;
+			display: grid;
+			gap: 10px;
+			grid-template-columns: 2fr 3fr;
+		}
+
+		.ErrorMessage {
+			margin: 20px 0 0 0;
+			text-align: center;
+			font-size: medium;
+			color: red;
+			visibility: hidden;
+			font-weight: 600;
+		}
+		.Show {
+			visibility: visible;
+		}
+
+		.CalculateButtonContainer {
+			margin: -40px auto 10px auto;
+			h2 {
+				margin: 0;
+				text-transform: initial;
+				color: white
+			}
+			#calculateButton{
+				background-color: $buttonColor;
+			}
+		}
+
+		.AccordionContainer {
+			display: grid;
+			gap: 15px;
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.Accordion{
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	}
+
+	.Hidden {
+		visibility: hidden;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.App {
+		padding: 10%;
+
+		.Container {
+			padding: 20px;
+
+			.InputContainer {
+				grid-template-columns: 3fr fr;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 800px) {
+	.App {
+		padding: 4%;
+
+		.Container {
+			padding: 20px;
+
+			.InputContainer {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+}
