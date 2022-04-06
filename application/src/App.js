@@ -418,10 +418,14 @@ function App() {
 						expandIcon={<ExpandMoreIcon />}
 						aria-controls="Information about calculation"
 					>
-						<p>How is this calculated?</p>
+						<p>Information</p>
 					</AccordionSummary>
 					<AccordionDetails className="AccordionContainer">
-						<div></div>
+						<p>
+						Our calculator provides the customer with an efficient and precise emission prediction, to help map the best possible solutions for martime travel. 
+						In an industry where time is crucial, our service provides calculations instantly. We supply clever minds with clever tools, to change the future. 
+						-eMission Possible
+						</p>
 					</AccordionDetails>
 				</Accordion>
 			</Card>
